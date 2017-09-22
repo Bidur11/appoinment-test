@@ -1,0 +1,71 @@
+@charset "utf-8";
+html {
+	overflow-x: hidden;
+}
+
+/* Browser default css code */
+
+html, div, span, body, body, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+header {
+	color:#000;
+	background-color:#497994;
+	margin: 0px;
+	padding: 10px;
+	font-size: 25px;
+}
+
+/* Some basic css */
+
+.title{
+	color:#fff;	
+}
+
+.title h1{
+	padding: 20px;
+}
+
+/* Page form css */
+
+.new-form{
+	margin:32px 0 48px 0;
+	
+}
+.new-form input, label {
+	margin:10px 0 10px 0;
+}
+
+.top_form {
+	margin-bottom:20px;	
+}
+
+.small_input, input{
+	padding:10px;	
+}
+
+/* Button css */
+
+.btn{
+	margin:20px;
+	padding: 20px;
+}
+
+.btn-success{
+	background-color: #4f8ad0;
+    border-radius: 5px;
+    color: #fff;
+	padding:15px;
+}
+fieldset{
+	border: 2px solid;
+}
+legend{
+	width:62% !important;
+}

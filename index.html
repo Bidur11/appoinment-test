@@ -1,0 +1,90 @@
+<!-- Supports HTML5 features -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appoinment Application - Test</title>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+ <!-- Import Custom CSS -->
+ <link href="css/custom_style.css" rel="stylesheet">
+
+</head>
+
+<body>
+ <!-- Page header  --> 
+        <header>
+        		  <div class="container">
+                        <div class="title">
+                            <h1>Appoinment Application - Test</h1>
+                        </div>
+           		 </div>
+        </header><!-- header part end -->
+<!-- Page section  --> 
+        <section>
+            <div class="container"> 
+          		  <div class="btn">            
+                        <div class="alert alert-danger" style="display:none;">   </div>
+                         <div class="alert alert-success" style="display:none;">
+                            <strong>New appoinment has been successfully added.</strong>
+                        </div>
+                        <button class="btn-success"  id="new">NEW</button>       
+                  </div>
+              	  <div class="btn" id="add" style="display:none">
+                          <form method="post" action="" id="app-form" class="form-horizontal">
+                                <input type="submit" class="btn-success" value="ADD">
+                                <input type="button" class="btn-success" id="cancel" value="CANCEL" />
+                           		<div class="new-form">
+                                      <fieldset>
+                                          <legend>Please Enter the details:</legend>
+                                          <label class="control-label col-md-5" for="date">DATE:</label>
+                                          <input type="date" class="col-md-6" min=""  name="date" id="date" placeholder="Date"><br/>
+
+                                           <label class="control-label col-md-5" for="time">TIME:</label>
+                                          <input type="time" class="col-md-6" name="time"  id="time" placeholder="Time"><br/>
+
+                                           <label class="control-label col-md-5" for="desc">DESCRIPTION:</label>
+                                          <input type="text" class="col-md-6" name="desc" id="desc" placeholder="Description">                                        
+                                      </fieldset>
+                               </div>
+                         </form>
+                  </div> 
+                  
+                  <div class="top_form pull-right">
+                        <div class="small_input">
+                                <input type="text" placeholder="Search" id= "search">
+                                <button class="btn-success" onclick="getAppointments()">SEARCH</button>
+                        </div>
+                  </div>
+               
+                  <table class="table">
+                        <thead>
+                              <tr>
+                                  <th>DATE</th>
+                                  <th>TIME</th>
+                                  <th>DESCRIPTION</th>
+                              </tr>
+                        </thead>
+                        <tbody id="details">
+                                  <!-- will display appointment details -->   
+                        </tbody>
+                  </table>
+                
+                
+                   <p align="left" class="notice">No appoinments here.</p>
+            </div><!-- container part end -->
+        </section><!-- section part end -->
+<!-- page footer -->
+        <footer>       
+            <script src="js/custom_script.js"></script>            
+        </footer>
+</body>
+</html>
